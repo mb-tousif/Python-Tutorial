@@ -1,3 +1,14 @@
+# Write a program to print the multiplication table of 9.
+for i in range(1, 11):
+    print("9 x", i, "=", 9*i)
+
+# Write a program to print Vowel in list if it is present in the string.
+string = "Hello, have you tried our tutorial section yet?"
+vowels = ['a', 'e', 'i', 'o', 'u']
+for i in string:
+    if i in vowels:
+        print(i) # e o u i o u e o u i o
+
 # Write a program to find the integer between 1 and 100 that is divisible by 7 and 5.
 for i in range(1, 101):
     if i % 7 == 0 and i % 5 == 0:
