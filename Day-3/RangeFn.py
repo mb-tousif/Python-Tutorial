@@ -10,4 +10,4 @@ for i in range(1, 11, 2):
     print(i) # 1 3 5 7 9
 for i in range(10, 0, -1):
     print(i) # 10 9 8 7 6 5 4 3 2 1
-# # The range() function returns a range object with numbers, the default start value is 0, and the default increment is 1 (default values can be overridden). The range() function is used when a user needs to perform an action for a specific number of times. 
+# # The range() function returns a range object with numbers, the default start value is 0, and the default increment is 1 (default values can be overridden). The range() function is used when a user needs to perform an action for a specific number of times.
