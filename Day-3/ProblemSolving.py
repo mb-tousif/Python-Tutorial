@@ -40,3 +40,28 @@ print(count) # 5
 # Method 2
 num = input("Enter a number: ")
 print(len(num)) # 5
+
+# Write a program to check if a number is an Armstrong number or not.
+# Armstrong Number is a number that is equal to the sum of cubes of its digits.
+# For example 0, 1, 153, 370, 371, 407 etc.
+# Method 1
+num = int(input("Enter a number: "))
+sum = 0
+temp = num
+while temp > 0:
+    digit = temp % 10
+    sum += digit ** 3
+    temp //= 10
+if num == sum:
+    print(num, "is an Armstrong number")
+else:
+    print(num, "is not an Armstrong number")
+# Method 2
+num = int(input("Enter a number: "))
+sum = 0
+temp = num
+while temp > 0:
+    digit = temp % 10
+    sum += digit ** 3
+    temp //= 10
+print(num, "is an Armstrong number") if num == sum else print(num, "is not an Armstrong number")
