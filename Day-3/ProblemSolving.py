@@ -27,3 +27,16 @@ print(sum) # 1060
 # # # The else statement belongs to the if statement and is executed when the condition is False.
 # # A prime number is a number that is only divisible by 1 and itself. For example, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97 are all prime numbers.
 # # # The sum of all the prime numbers between 1 and 100 is 1060.
+
+# a> 0, a%10 = last digit, a//10 = remaining digits
+# Write a program to find the length of digits in a number.
+# Method 1
+num = int(input("Enter a number: "))
+count = 0
+while num > 0:
+    num = num//10
+    count += 1
+print(count) # 5
+# Method 2
+num = input("Enter a number: ")
+print(len(num)) # 5
