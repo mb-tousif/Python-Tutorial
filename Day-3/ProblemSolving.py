@@ -58,12 +58,25 @@ if num == sum:
 else:
     print(num, "is not an Armstrong number")
 # Method 2
-num = int(input("Enter a number: "))
-num_len = len(str(num))
+num = input("Enter a number: ")
+num_len = len(num)
 sum = 0
-temp = num
-while temp > 0:
-    digit = temp % 10
-    sum += digit ** num_len
-    temp //= 10
-print(num, "is an Armstrong number") if num == sum else print(num, "is not an Armstrong number")
+for i in num:
+    sum += int(i) ** num_len
+if int(num) == sum:
+    print(num, "is an Armstrong number")
+else:
+    print(num, "is not an Armstrong number")
+
+# Write a program to reverse a number.
+# Method 1
+num = int(input("Enter a number: "))
+rev = 0
+while num > 0:
+    digit = num % 10
+    rev = rev * 10 + digit
+    num = num // 10
+print(rev) 
+# Method 2
+num = input("Enter a number: ")
+print(num[::-1]) # 54321
