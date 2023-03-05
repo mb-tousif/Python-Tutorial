@@ -46,11 +46,12 @@ print(len(num)) # 5
 # For example 0, 1, 153, 370, 371, 407 etc.
 # Method 1
 num = int(input("Enter a number: "))
+num_len = len(str(num))
 sum = 0
 temp = num
 while temp > 0:
     digit = temp % 10
-    sum += digit ** 3
+    sum += digit ** num_len
     temp //= 10
 if num == sum:
     print(num, "is an Armstrong number")
@@ -58,10 +59,11 @@ else:
     print(num, "is not an Armstrong number")
 # Method 2
 num = int(input("Enter a number: "))
+num_len = len(str(num))
 sum = 0
 temp = num
 while temp > 0:
     digit = temp % 10
-    sum += digit ** 3
+    sum += digit ** num_len
     temp //= 10
 print(num, "is an Armstrong number") if num == sum else print(num, "is not an Armstrong number")
