@@ -10,7 +10,3 @@ transpose = [[row[i] for row in matrix] for i in range(3)]
 print(transpose)
 # Output:
 # [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
-
-
-
-
