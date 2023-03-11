@@ -30,7 +30,10 @@ print(string1 > string2) # Output: False
 print(string1 < string2) # Output: True
 # Formatting means formatting a string. It can be done using format() method.
 # Example:
-print("Hello {0}".format("World")) # Output: Hello World
+print("Hello {}".format("World")) # Output: Hello World
+name = "Tousif"
+occupation = "MERN Stack Developer"
+print("I am {}. I am a {}".format(name, occupation)) # Output: I am Tousif. I am a MERN Stack Developer
 # Search means searching a substring in a string. It can be done using find() method. find() method returns index of first occurrence of substring. If substring is not found, it returns -1. It can be done using index() method. index() method returns index of first occurrence of substring. If substring is not found, it raises ValueError exception. It can be done using rfind() method. rfind() method returns index of last occurrence of substring. If substring is not found, it returns -1. It can be done using rindex() method. rindex() method returns index of last occurrence of substring. If substring is not found, it raises ValueError exception. It can be done using count() method. count() method returns number of occurrences of substring in string. If substring is not found, it returns 0. 
 # Example:
 print(string.find("World")) # Output: 6
